@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  margin-top: 20px;
+
+  width: 65%;
+}
+
+.add-new-habit-form {
+  width: 20%;
+  height: 100%;
+
+  padding: 10px 20px;
+}
+
+.form-input {
+  font-size: 18px;
+}
+
+.form-input,
+.submit-btn,
+.reset-btn {
+  width: 100%;
+}
+
+.habit-table {
+  width: 55%;
+}
+
+.border-grey {
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 5px;
+}
+
+.clear-btn {
+  border: none;
+  outline: none;
+
+  background: transparent;
+}
+
+.donut-chart {
+  height: 100%;
+  padding: 10px;
+}
+
+.donut {
+  pointer-events: none;
+  display: block;
+
+  width: 150px;
+  height: 150px;
+
+  margin-top: 25px;
+}
+
+.mat-column-position {
+  flex: 0 0 10% !important;
+  width: 10% !important;
+}
+
+.mat-column-title,
+.mat-column-status {
+  flex: 0 0 30% !important;
+  width: 30% !important;
+}
+
+.mat-column-delete,
+.mat-column-edit {
+  flex: 0 0 10% !important;
+  width: 10% !important;
+}
+
+.habit-list {
+  max-width: 100%;
+  border: solid 1px #ccc;
+  min-height: 60px;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.habit-row {
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
+  width: 100%;
+  cursor: move;
+  background: white;
+  font-size: 14px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.habit-row:last-child {
+  border: none;
+}
+
+.habit-list.cdk-drop-list-dragging .habit-row:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
